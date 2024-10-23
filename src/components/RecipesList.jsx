@@ -1,3 +1,4 @@
+import ListItem from "./ListItem";
 import recipes from "../data/recipes.json";
 import { useState } from "react";
 
@@ -13,24 +14,13 @@ const RecipesList = () => {
 
   return (
     <section>
-      {recipesToDisplay.map((recipeObj) => {
-        return (
-          <div key={recipeObj.id} className="Content">
-            <img src={recipeObj.image} />
-            <p>Name of recipe: {recipeObj.name}</p>
-            <p>Calories: {recipeObj.calories}</p>
-            <p>Servings: {recipeObj.servings}</p>
-            {recipeObj.calories < 200 && <p>Low calories</p>}
-            <button
-              onClick={() => {
-                deleteRecipe(recipeObj.id);
-              }}
-            >
-              Delete this recipe
-            </button>
-          </div>
-        );
-      })}
+      {recipesToDisplay.map((recipeObj) => (
+        <ListItem
+          key={recipeObj.id}
+          recipeObj={recipeObj}
+          onDelete={deleteRecipe}
+        />
+      ))}
     </section>
   );
 };
