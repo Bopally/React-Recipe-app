@@ -1,18 +1,19 @@
-/* Style for the App */
-
+/* Global Styles */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(245, 245, 245);
+  color: #333;
   margin: 0;
 }
 
-/* Style for the Nav Bar*/
-
+/* NavBar Styles */
 .NavBar {
-  background-color: rgb(95, 95, 95);
+  background-color: rgb(74, 74, 74);
+  color: #fff;
   text-align: center;
+  padding: 10px 0;
 }
 
 .logo {
@@ -20,45 +21,63 @@ body {
   height: auto;
 }
 
+/* App Layout */
 .App {
   display: flex;
   flex-direction: row;
   height: 100vh;
 }
 
+/* Main Content Styles */
 .App .Main {
   flex-grow: 1;
-
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 
 .App .Main .NavBar {
   flex-grow: 0;
   height: 50px;
 }
+
 .App .Main .Content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   flex-grow: 1;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .App .Main .Content img {
-  height: 100px;
-  width: auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 1em;
+  border-radius: 8px;
 }
 
-/* Style for the Side Bar*/
+/* Sidebar Styles */
 aside {
   background-color: rgb(224, 224, 224);
   width: 200px;
   height: 100%;
   padding: 1em;
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
-/* Style for the Footer*/
+/* Footer Styles */
 footer {
   background-color: rgb(185, 185, 185);
+  color: #fff;
   text-align: center;
   padding: 1em;
   width: 100%;
