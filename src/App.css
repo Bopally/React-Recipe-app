@@ -41,6 +41,11 @@ body {
   flex-grow: 1;
 }
 
+.App .Main .Content img {
+  height: 100px;
+  width: auto;
+}
+
 /* Style for the Side Bar*/
 aside {
   background-color: rgb(224, 224, 224);
