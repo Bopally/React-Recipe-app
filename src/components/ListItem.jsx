@@ -1,4 +1,4 @@
-const ListItem = ({ recipeObj, deleteRecipe }) => {
+const ListItem = ({ recipeObj, onDelete }) => {
   return (
     <div key={recipeObj.id} className="Content">
       <img src={recipeObj.image} alt={`Image of ${recipeObj.name}`} />
@@ -6,9 +6,7 @@ const ListItem = ({ recipeObj, deleteRecipe }) => {
       <p>Calories: {recipeObj.calories}</p>
       <p>Servings: {recipeObj.servings}</p>
       {recipeObj.calories < 200 && <p>Low calories</p>}
-      <button onClick={() => deleteRecipe(recipeObj.id)}>
-        Delete this recipe
-      </button>
+      <button onClick={() => onDelete(recipeObj.id)}>Delete this recipe</button>
     </div>
   );
 };
