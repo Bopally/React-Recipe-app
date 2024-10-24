@@ -10,7 +10,7 @@ const AboutPage = () => {
     {
       id: 2,
       name: "Mariana",
-      linkedIn: "https://www.linkedin.com/in/mariana-fraz%C3%A3o-23895a325/",
+      linkedIn: "https://www.linkedin.com/in/mariana-luzia-frazao/",
       github: "https://github.com/marianafrazao",
       // image:
     },

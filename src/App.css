@@ -69,6 +69,14 @@ body {
   flex-grow: 1;
 }
 
+.App .Main a {
+  text-decoration: none;
+  color: grey;
+}
+
+.App .ItemDetailsPage img {
+  width: 300px;
+}
 /* Sidebar Styles */
 aside {
   background-color: rgb(224, 224, 224);
@@ -86,7 +94,6 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1em;
-  width: 100%;
   flex-grow: 0;
   height: 50px;
 }

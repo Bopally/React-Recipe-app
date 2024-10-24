@@ -1,6 +1,7 @@
 import ListItem from "./ListItem";
 import recipes from "../data/recipes.json";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const RecipesList = () => {
   const [recipesToDisplay, setrecipesToDisplay] = useState(recipes);
@@ -14,13 +15,13 @@ const RecipesList = () => {
 
   return (
     <section>
-      {recipesToDisplay.map((recipeObj) => (
-        <ListItem
-          key={recipeObj.id}
-          recipeObj={recipeObj}
-          onDelete={deleteRecipe}
-        />
-      ))}
+      {recipesToDisplay.map((recipeObj) => {
+        return (
+          <Link to={`/ItemDetailsPage/${recipeObj.id}`} key={recipeObj.id}>
+            <ListItem recipeObj={recipeObj} onDelete={deleteRecipe} />
+          </Link>
+        );
+      })}
     </section>
   );
 };

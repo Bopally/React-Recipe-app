@@ -4,118 +4,135 @@
     "name": "Pizza",
     "calories": 400,
     "image": "https://i.imgur.com/eTmWoAN.png",
-    "servings": 1
+    "servings": 1,
+    "description": "A delicious classic, Pizza is a beloved dish made with a crispy crust, tangy tomato sauce, and melted cheese. Perfect for any occasion, this savory treat is sure to satisfy your cravings and is often topped with a variety of meats, vegetables, or herbs."
   },
   {
     "id": "37e0b31d-63f4-4d42-9f4b-e9a0fc464d60",
     "name": "Salad",
     "calories": 150,
     "image": "https://i.imgur.com/DupGBz5.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Refreshing and healthy, Salad is a light dish made from fresh vegetables and often topped with a dressing. It provides a perfect balance of flavors and textures, making it a versatile side or main dish that can be customized with various ingredients."
   },
   {
     "id": "b5eb5b5f-41b8-4f1f-8844-7a1a56a17df7",
     "name": "Sweet Potato",
     "calories": 120,
     "image": "https://i.imgur.com/hGraGyR.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Naturally sweet and nutritious, Sweet Potatoes are a versatile root vegetable rich in vitamins and fiber. They can be baked, mashed, or roasted, offering a delicious and healthy alternative to traditional potatoes, with a unique flavor and vibrant color."
   },
   {
     "id": "6c0f6f33-8c50-403d-9d1c-6ac9d8b77f29",
     "name": "Gnocchi",
     "calories": 500,
     "image": "https://i.imgur.com/93ekwW0.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Gnocchi, tender Italian dumplings made from potatoes, flour, and eggs, offer a delightful, pillowy texture. They are often served with rich sauces such as tomato, pesto, or creamy cheese, making them a comforting and satisfying meal option."
   },
   {
     "id": "f4b4d2bc-ff12-4f3f-b3b3-19d2f1682401",
     "name": "Pot Roast",
     "calories": 350,
     "image": "https://i.imgur.com/WCzJDWz.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Pot Roast, a hearty and flavorful dish, is made by slow-cooking beef with vegetables and seasonings. This tender and savory meal is perfect for gatherings, offering a comforting taste of home with its rich, aromatic gravy and succulent meat."
   },
   {
     "id": "bf89c1db-5c5b-4262-9d1e-8a68f88c61d5",
     "name": "Lasagna",
     "calories": 750,
     "image": "https://i.imgur.com/ClxOafl.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Lasagna, a classic Italian dish, layers pasta, meat, cheese, and tomato sauce for a deliciously rich and hearty meal. Perfectly baked to golden perfection, this savory casserole is a favorite comfort food that brings warmth to any dinner table."
   },
   {
     "id": "bca9beec-43d3-48b1-9b57-793a8a8c3520",
     "name": "Hamburger",
     "calories": 400,
     "image": "https://i.imgur.com/LoG39wK.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "A Hamburger is a classic American favorite, featuring a juicy beef patty sandwiched between soft buns. Often garnished with lettuce, tomato, and cheese, this satisfying dish is perfect for casual dining, offering a delicious blend of flavors and textures."
   },
   {
     "id": "b777a69a-7f1c-41e8-8a4c-1d0e9e4cace8",
     "name": "Pad Thai",
     "calories": 475,
     "image": "https://i.imgur.com/5ktcSzF.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Pad Thai is a popular Thai street food dish made with stir-fried rice noodles, shrimp, or chicken, and a tangy-sweet sauce. Topped with peanuts and lime, it offers a vibrant, flavorful experience that showcases the perfect balance of Thai cuisine."
   },
   {
     "id": "d087343e-9a92-48c7-8b27-43e37491b6f5",
     "name": "Almonds",
     "calories": 75,
     "image": "https://i.imgur.com/JRp4Ksx.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Almonds are nutritious nuts known for their crunchy texture and rich flavor. Packed with healthy fats, proteins, and vitamins, they make a great snack or ingredient for various dishes, offering health benefits while adding a delightful taste."
   },
   {
     "id": "e1f87a2e-60b3-4a3f-bb48-20a396a9a94f",
     "name": "Sarma",
     "calories": 200,
     "image": "https://i.imgur.com/yOlf4Fj.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Sarma, a traditional dish in many Balkan cuisines, consists of grape or cabbage leaves stuffed with a savory mixture of meat and rice. This flavorful, aromatic dish is often enjoyed during festive occasions, offering a taste of cultural heritage."
   },
   {
     "id": "0ce7e4d4-1c8a-4e9f-98df-1ecb1e7b8a0b",
     "name": "Bacon",
     "calories": 175,
     "image": "https://i.imgur.com/7GlqDsG.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Bacon, a beloved breakfast staple, is known for its rich flavor and crispy texture. Made from cured pork belly, it's a versatile ingredient that can enhance many dishes, from sandwiches to salads, with its savory, smoky taste."
   },
   {
     "id": "bbfd30fd-cd75-4e3b-8fc8-3d3fd62a3c39",
     "name": "Hot Dog",
     "calories": 275,
     "image": "https://i.imgur.com/QqVHdRu.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "The Hot Dog is a classic American snack, featuring a grilled sausage served in a soft bun. Often topped with mustard, ketchup, and onions, it's a popular choice for barbecues and sporting events, offering a quick and satisfying meal."
   },
   {
     "id": "1c6d5b5f-4e72-4136-8c6c-9cf3e3d16a65",
     "name": "Chocolate Cake",
     "calories": 490,
     "image": "https://i.imgur.com/yrgzA9x.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Chocolate Cake is a decadent dessert that delights with its rich, moist layers of chocolate sponge and creamy frosting. Perfect for celebrations, this indulgent treat offers a heavenly taste that satisfies any sweet tooth."
   },
   {
     "id": "07d9616d-7a63-457c-b8a7-58f6a70a67e3",
     "name": "Wheat Bread",
     "calories": 175,
     "image": "https://i.imgur.com/TsWzMfM.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Wheat Bread is a wholesome staple made from whole grain wheat flour, offering a hearty, nutty flavor. Rich in fiber and nutrients, it's a healthy choice for sandwiches and toast, providing a nutritious start to your day."
   },
   {
     "id": "d7a8f0c1-0a34-4e3b-a2d3-3c3e3f11eb19",
     "name": "Orange",
     "calories": 85,
     "image": "https://i.imgur.com/abKGOcv.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Oranges are juicy, sweet citrus fruits known for their vibrant color and refreshing taste. Packed with vitamin C and antioxidants, they're a healthy snack that boosts immunity and adds a burst of flavor to any dish or drink."
   },
   {
     "id": "a8d111c4-50ef-4c61-8b16-17e84a86b2f4",
     "name": "Banana",
     "calories": 175,
     "image": "https://i.imgur.com/BMdJhu5.jpg",
-    "servings": 1
+    "servings": 1,
+    "description": "Bananas are creamy, sweet fruits loved for their convenient packaging and energy-boosting properties. Rich in potassium and fiber, they are a quick snack or ingredient for smoothies and desserts, offering nutritional benefits with every bite."
   },
   {
     "id": "62d8a0bc-1b77-4389-9e7b-2e00cace6a2e",
     "name": "Yogurt",
     "calories": 125,
     "image": "https://i.imgur.com/URhdrAm.png",
-    "servings": 1
+    "servings": 1,
+    "description": "Yogurt is a creamy, nutritious dairy product rich in probiotics and calcium. It's a versatile food that can be enjoyed with fruits, nuts, or honey, offering a delicious and healthy option for breakfast or a snack."
   }
 ]
