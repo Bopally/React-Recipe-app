@@ -63,6 +63,12 @@ body {
   border-radius: 8px;
 }
 
+.App .Main .Details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 /* Sidebar Styles */
 aside {
   background-color: rgb(224, 224, 224);
