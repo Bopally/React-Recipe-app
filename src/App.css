@@ -69,6 +69,17 @@ body {
   flex-grow: 1;
 }
 
+.App .Tags {
+  display: flex;
+  gap: 5px;
+}
+
+.App .LowCalories {
+  background-color: lightgreen;
+  border: 1px black solid;
+  border-radius: 5px;
+  padding: 5px;
+}
 .App .Main a {
   text-decoration: none;
   color: grey;

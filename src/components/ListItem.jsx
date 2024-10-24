@@ -6,7 +6,11 @@ const ListItem = ({ recipeObj, onDelete }) => {
         <p>Name of recipe: {recipeObj.name}</p>
         <p>Calories: {recipeObj.calories}</p>
         <p>Servings: {recipeObj.servings}</p>
-        {recipeObj.calories < 200 && <p>Low calories</p>}
+        <div className="Tags">
+          {recipeObj.calories < 200 && (
+            <div className="LowCalories">Low calories</div>
+          )}
+        </div>
       </div>
 
       <div>
