@@ -3,14 +3,14 @@ const AboutPage = () => {
     {
       id: 1,
       name: "Estelle",
-      linkedIn: "https://linkedin.com/in/estelle",
-      github: "https://github.com/estelle",
+      linkedIn: "https://www.linkedin.com/in/ballot-estelle/",
+      github: "https://github.com/Bopally",
       // image:
     },
     {
       id: 2,
       name: "Mariana",
-      linkedIn: "https://linkedin.com/in/mariana",
+      linkedIn: "https://www.linkedin.com/in/mariana-fraz%C3%A3o-23895a325/",
       github: "https://github.com/marianafrazao",
       // image:
     },
