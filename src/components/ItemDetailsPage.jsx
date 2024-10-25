@@ -1,4 +1,5 @@
 import recipes from "../data/recipes.json";
+import UpdateRecipe from "./UpdateRecipe";
 import { useParams } from "react-router-dom";
 
 const ItemDetailsPage = () => {
@@ -15,6 +16,8 @@ const ItemDetailsPage = () => {
       <p>Calories: {recipeDetails.calories}</p>
       <p>Servings: {recipeDetails.servings}</p>
       <p>Description: {recipeDetails.description}</p>
+
+      <UpdateRecipe />
     </div>
   );
 };
