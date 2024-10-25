@@ -1,25 +1,22 @@
 import ListItem from "./ListItem";
-import recipes from "../data/recipes.json";
-import { useState } from "react";
-import { Link } from "react-router-dom";
 
-const RecipesList = () => {
-  const [recipesToDisplay, setrecipesToDisplay] = useState(recipes);
-
+const RecipesList = ({ recipes, setRecipes }) => {
   const deleteRecipe = (recipeId) => {
-    const newArray = recipesToDisplay.filter((recipeObj) => {
+    const newArray = recipes.filter((recipeObj) => {
       return recipeObj.id !== recipeId;
     });
-    setrecipesToDisplay(newArray);
+    setRecipes(newArray);
   };
 
   return (
     <section>
-      {recipesToDisplay.map((recipeObj) => {
+      {recipes.map((recipeObj) => {
         return (
-          <Link to={`/ItemDetailsPage/${recipeObj.id}`} key={recipeObj.id}>
-            <ListItem recipeObj={recipeObj} onDelete={deleteRecipe} />
-          </Link>
+          <ListItem
+            key={recipeObj.id}
+            recipeObj={recipeObj}
+            onDelete={deleteRecipe}
+          />
         );
       })}
     </section>
