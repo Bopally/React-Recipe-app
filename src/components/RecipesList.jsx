@@ -9,7 +9,7 @@ const RecipesList = ({ recipes, setRecipes }) => {
   };
 
   return (
-    <section>
+    <section className="RecipesList">
       {recipes.map((recipeObj) => {
         return (
           <ListItem

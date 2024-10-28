@@ -1,8 +1,8 @@
 const NavBar = () => {
   return (
     <div className="NavBar">
-      <span>App Name</span>
-      <img src="/images/cookie-win copie.png" alt="logo" className="logo" />
+      <span>{`Grandmother's recipes`}</span>
+      <img src="/images/Logo-Grandmother.png" alt="logo" className="logo" />
     </div>
   );
 };
