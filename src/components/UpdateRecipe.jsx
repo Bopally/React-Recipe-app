@@ -55,7 +55,7 @@ const UpdateRecipe = () => {
         {/* Description */}
         <label>
           Description:
-          <textarea
+          <text
             name="description"
             placeholder="Write few words about the recipe!"
             value={description}

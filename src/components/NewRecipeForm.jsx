@@ -78,7 +78,7 @@ const NewRecipeForm = ({ addRecipe }) => {
           <input
             type="url"
             name="image"
-            placeholder="#"
+            placeholder="Link"
             value={image}
             onChange={(e) => setImage(e.target.value)}
           />
@@ -88,7 +88,7 @@ const NewRecipeForm = ({ addRecipe }) => {
           Description:
           <textarea
             name="description"
-            placeholder="Write few words about the recipe!"
+            placeholder="Describe your recipe!"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />
