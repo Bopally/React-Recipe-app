@@ -32,24 +32,26 @@ const AboutPage = () => {
       </p>
 
       <h2>About the team members:</h2>
-      {users.map((user) => (
-        <div key={user.id} className="team-member-box">
-          <img src={user.image} alt={`${user.name}'s profile`} />
-          <p>Name: {user.name}</p>
-          <p>
-            LinkedIn:{" "}
-            <a href={user.linkedIn} target="_blank" rel="xxxr">
-              {user.linkedIn}
-            </a>
-          </p>
-          <p>
-            GitHub:{" "}
-            <a href={user.github} target="_blank" rel="xxx">
-              {user.github}
-            </a>
-          </p>
-        </div>
-      ))}
+      <div className="team-members">
+        {" "}
+        {/* Wrap team member boxes in this container */}
+        {users.map((user) => (
+          <div key={user.id} className="team-member-box">
+            <img src={user.image} alt={`${user.name}'s profile`} />
+            <p>Name: {user.name}</p>
+            <p>
+              <a href={user.linkedIn} target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
+            </p>
+            <p>
+              <a href={user.github} target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </p>
+          </div>
+        ))}
+      </div>
     </>
   );
 };
