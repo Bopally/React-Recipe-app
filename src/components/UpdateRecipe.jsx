@@ -1,36 +1,60 @@
 import { useState } from "react";
 
-const UpdateRecipe = () => {
-  const [calories, setCalories] = useState("");
-  const [servings, setServings] = useState("");
-  const [description, setDescription] = useState("");
+const UpdateRecipe = ({ recipeDetails, setRecipes, recipes }) => {
+  const [title, setTitle] = useState(recipeDetails.name || "");
+  const [calories, setCalories] = useState(recipeDetails.calories || "");
+  const [servings, setServings] = useState(recipeDetails.servings || "");
+  const [description, setDescription] = useState(
+    recipeDetails.description || ""
+  );
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const newRecipe = {
-      calories: calories,
-      servings: servings,
+
+    const updatedRecipe = {
+      ...recipeDetails,
+      name: title,
+      calories: Number(calories),
+      servings: Number(servings),
       description: description,
     };
-    console.log(newRecipe);
 
-    setCalories("");
-    setServings("");
-    setDescription("");
+    // Update the information from the recipe with the new one
+    const updatedRecipes = recipes.map((recipe) =>
+      recipe.id === recipeDetails.id ? updatedRecipe : recipe
+    );
+
+    setRecipes(updatedRecipes);
+
+    setTitle(updatedRecipe.name);
+    setCalories(updatedRecipe.calories.toString());
+    setServings(updatedRecipe.servings.toString());
+    setDescription(updatedRecipe.description);
   };
 
   return (
     <section className="box">
       <h2>Update this recipe</h2>
-
       <form onSubmit={handleSubmit}>
+        {/* Title */}
+        <label>
+          Title:
+          <input
+            type="text"
+            name="title"
+            placeholder={recipeDetails.name}
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </label>
+
         {/* Calories */}
         <label>
           Calories:
           <input
             type="number"
             name="calories"
-            placeholder="500"
+            placeholder={recipeDetails.calories.toString()}
             required
             min={0}
             value={calories}
@@ -44,7 +68,7 @@ const UpdateRecipe = () => {
           <input
             type="number"
             name="servings"
-            placeholder="4"
+            placeholder={recipeDetails.servings.toString()}
             required
             min={1}
             value={servings}
@@ -55,9 +79,9 @@ const UpdateRecipe = () => {
         {/* Description */}
         <label>
           Description:
-          <text
+          <textarea
             name="description"
-            placeholder="Write few words about the recipe!"
+            placeholder={recipeDetails.description}
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           />

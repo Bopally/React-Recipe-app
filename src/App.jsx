@@ -12,6 +12,7 @@ import RecipesList from "./components/RecipesList";
 import ItemDetailsPage from "./components/ItemDetailsPage";
 import AboutPage from "./components/AboutPage";
 import NotFoundPage from "./components/NotFoundPage";
+// import UpdateRecipe from "./components/UpdateRecipe";
 
 function App() {
   const [recipes, setRecipes] = useState(recipesJson);
@@ -29,9 +30,12 @@ function App() {
           />
           <Route
             path="/ItemDetailsPage/:recipeId"
-            element={<ItemDetailsPage />}
+            element={
+              <ItemDetailsPage recipes={recipes} setRecipes={setRecipes} />
+            }
           />
           <Route path="/AboutPage" element={<AboutPage />} />
+          <Route path="/update/:recipeId" />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
         <Footer />
