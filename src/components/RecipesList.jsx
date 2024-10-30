@@ -1,4 +1,5 @@
 import ListItem from "./ListItem";
+import NewRecipeForm from "./NewRecipeForm";
 
 const RecipesList = ({ recipes, setRecipes }) => {
   const deleteRecipe = (recipeId) => {
@@ -8,18 +9,26 @@ const RecipesList = ({ recipes, setRecipes }) => {
     setRecipes(newArray);
   };
 
+  const addRecipe = (newRecipe) => {
+    setRecipes([newRecipe, ...recipes]);
+  };
+
   return (
-    <section className="RecipesList">
-      {recipes.map((recipeObj) => {
-        return (
-          <ListItem
-            key={recipeObj.id}
-            recipeObj={recipeObj}
-            onDelete={deleteRecipe}
-          />
-        );
-      })}
-    </section>
+    <div>
+      <NewRecipeForm addRecipe={addRecipe} />
+
+      <section className="RecipesList">
+        {recipes.map((recipeObj) => {
+          return (
+            <ListItem
+              key={recipeObj.id}
+              recipeObj={recipeObj}
+              onDelete={deleteRecipe}
+            />
+          );
+        })}
+      </section>
+    </div>
   );
 };
 

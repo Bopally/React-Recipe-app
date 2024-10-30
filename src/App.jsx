@@ -9,7 +9,6 @@ import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import SideBar from "./components/SideBar";
 import RecipesList from "./components/RecipesList";
-import NewRecipeForm from "./components/NewRecipeForm";
 import ItemDetailsPage from "./components/ItemDetailsPage";
 import AboutPage from "./components/AboutPage";
 import NotFoundPage from "./components/NotFoundPage";
@@ -17,16 +16,12 @@ import NotFoundPage from "./components/NotFoundPage";
 function App() {
   const [recipes, setRecipes] = useState(recipesJson);
 
-  const addRecipe = (newRecipe) => {
-    setRecipes([newRecipe, ...recipes]);
-  };
-
   return (
     <div className="App">
       <SideBar />
       <div className="Main">
         <NavBar id="navBar" />
-        <NewRecipeForm addRecipe={addRecipe} />
+        {/* <NewRecipeForm addRecipe={addRecipe} /> */}
         <Routes>
           <Route
             path="/"

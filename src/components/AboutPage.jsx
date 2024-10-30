@@ -33,7 +33,6 @@ const AboutPage = () => {
 
       <h2>About the team members:</h2>
       <div className="team-members">
-        {" "}
         {/* Wrap team member boxes in this container */}
         {users.map((user) => (
           <div key={user.id} className="team-member-box">
