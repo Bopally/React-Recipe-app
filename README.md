@@ -1,8 +1,9 @@
-# React + Vite
+## Description
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React recipe is a React App built with Javascript, React, HTML, CSS and display the Grandmother's recipes
 
-Currently, two official plugins are available:
+## Structure
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You have a main page with all the Grandmother's recipes ! You can add a new recipe, delete others, and update all the recipes.
+
+You will find an About page with information about the Grandmother's recipes and more information, about Mariana and Estelle.
